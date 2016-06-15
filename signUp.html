@@ -4,9 +4,9 @@
 
 	<meta charset="utf-8">
 
-	<title>Login</title>
+	<title>注册</title>
 
-	<link rel="stylesheet" href="login.css">
+	<link rel="stylesheet" href="signUp.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,21 +16,19 @@
 
 <body>
 
-	<div id="login">
+	<div id="signUp">
 
-		<h2><span class="fontawesome-lock"></span>登陆</h2>
+		<h2><span class="fontawesome-lock"></span>注册</h2>
 
 		<form action="javascript:void(0);" method="POST">
-
 			<fieldset>
-
 				<p><label for="userAccount">用户名</label></p>
 				<p><input type="text" id="userAccount" value="用户名" onBlur="if(this.value=='')this.value='用户名'" onFocus="if(this.value=='用户名')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
 
 				<p><label for="password">密码</label></p>
 				<p><input type="password" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
 
-				<p><input type="submit" value="登陆"></p>
+				<p><input type="submit" value="注册"></p>
 
 			</fieldset>
 

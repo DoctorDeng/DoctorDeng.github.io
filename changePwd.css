@@ -39,12 +39,12 @@ input {
 
 /* ---------- LOGIN ---------- */
 
-#login {
+#changePwd {
 	margin: 50px auto;
 	width: 400px;
 }
 
-#login h2 {
+#changePwd h2 {
 	background-color: #f95252;
 	-webkit-border-radius: 20px 20px 0 0;
 	-moz-border-radius: 20px 20px 0 0;
@@ -54,11 +54,11 @@ input {
 	padding: 20px 26px;
 }
 
-#login h2 span[class*="fontawesome-"] {
+#changePwd h2 span[class*="fontawesome-"] {
 	margin-right: 14px;
 }
 
-#login fieldset {
+#changePwd fieldset {
 	background-color: #fff;
 	-webkit-border-radius: 0 0 20px 20px;
 	-moz-border-radius: 0 0 20px 20px;
@@ -66,29 +66,29 @@ input {
 	padding: 20px 26px;
 }
 
-#login fieldset p {
+#changePwd fieldset p {
 	color: #777;
 	margin-bottom: 14px;
 }
 
-#login fieldset p:last-child {
+#changePwd fieldset p:last-child {
 	margin-bottom: 0;
 }
 
-#login fieldset input {
+#changePwd fieldset input {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
-#login fieldset input[type="text"], #login fieldset input[type="password"] {
+#changePwd fieldset input[type="text"], #changePwd fieldset input[type="password"] {
 	background-color: #eee;
 	color: #777;
 	padding: 4px 10px;
 	width: 328px;
 }
 
-#login fieldset input[type="submit"] {
+#changePwd fieldset input[type="submit"] {
 	background-color: #33cc77;
 	color: #fff;
 	display: block;
@@ -97,6 +97,6 @@ input {
 	width: 100px;
 }
 
-#login fieldset input[type="submit"]:hover {
+#changePwd fieldset input[type="submit"]:hover {
 	background-color: #28ad63;
 }

@@ -13,13 +13,13 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Doctordeng.GitHub.io by DoctorDeng</title>
+    <title>JavaEE基础知识整理 by DoctorDeng</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Doctordeng.GitHub.io</h1>
+        <h1>JavaEE基础知识整理</h1>
         <h2>个人网站</h2>
         <a href="https://github.com/DoctorDeng" class="button"><small>Follow me on</small> GitHub</a>
       </div>
@@ -28,30 +28,261 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h3>
-<a id="欢迎来到邓博士的主页" class="anchor" href="#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E9%82%93%E5%8D%9A%E5%A3%AB%E7%9A%84%E4%B8%BB%E9%A1%B5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>欢迎来到邓博士的主页.</h3>
+          <h2>
+<a id="1线程进程的基本概念和它们之间的区别" class="anchor" href="#1%E7%BA%BF%E7%A8%8B%E8%BF%9B%E7%A8%8B%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5%E5%92%8C%E5%AE%83%E4%BB%AC%E4%B9%8B%E9%97%B4%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>1、线程、进程的基本概念和它们之间的区别。</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here <a href="https://guides.github.com/features/mastering-markdown/">using GitHub Flavored Markdown</a>, select a template crafted by a designer, and publish. After your page is generated, you can check out the new <code>gh-pages</code> branch locally. If you’re using GitHub Desktop, simply sync your repository and you’ll see the new branch.</p>
+<p><strong>线程的基本概念</strong></p>
 
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Designer Templates</h3>
+<ul>
+<li>线程是进程中执行运算的最小单位，是进程中的一个实体，是被系统独立调度和分派的基本单位，线程自己不拥有系统资源，只拥有一点在运行中必不可少的资源，但它可与同属一个进程的其它线程共享进程所拥有的全部资源。一个线程可以创建和撤消另一个线程，同一进程中的多个线程之间可以并发执行。</li>
+</ul>
 
-<p>We’ve crafted some handsome templates for you to use. Go ahead and click 'Continue to layouts' to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved.</p>
+<p><strong>进程的基本概念</strong></p>
 
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Creating pages manually</h3>
+<ul>
+<li>进程是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。它是操作系统动态执行的基本单元，在传统的操作系统中，进程既是基本的分配单元，也是基本的执行单元。</li>
+<li>进程的概念主要有两点：
+第一，进程是一个实体。每一个进程都有它自己的地址空间，一般情况下，包括文本区域（text region）、数据区域（data region）和堆栈（stack region）。文本区域存储处理器执行的代码；数据区域存储变量和进程执行期间使用的动态分配的内存；堆栈区域存储着活动过程调用的指令和本地变量。
+第二，进程是一个“执行中的程序”。程序是一个没有生命的实体，只有处理器赋予程序生命时（操作系统执行之），它才能成为一个活动的实体，我们称其为进程。</li>
+</ul>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<p><strong>进程和线程的区别</strong></p>
 
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<ul>
+<li>调度：线程作为<code>CPU</code>调度和分配的基本单位，进程作为<code>操作系统</code>分配资源的基本单位。</li>
+<li>拥有资源：进程是拥有资源的一个独立单位，线程不拥有系统资源（或只拥有比不可少的资源，如程序计数器,一组寄存器和栈），但可以访问隶属于进程的资源，即与其他线程共享资源。</li>
+<li>系统开销：在创建或撤消进程时，由于系统都要为之分配和回收资源，导致系统的开销明显大于创建或撤消线程时的开销。</li>
+<li>进程可以独立运行，线程必须依赖进程运行</li>
+<li>一个程序至少有一个进程,一个进程至少有一个线程。</li>
+</ul>
 
-<p>You can @mention a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor’s GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p><strong>线程和进程的优缺点</strong></p>
 
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
+<ul>
+<li>线程和进程在使用上各有优缺点：线程执行开销小，但不利于资源的管理和保护；而进程正相反。同时，线程适合于在SMP机器上运行，而进程则可以跨机器迁移。
+## 2、Java中线程的几种状态、并作详细说明。</li>
+<li>创建（new）：
+通过New关键字创建了Thread类（或其子类）的对象，此时并没有调用对象的<code>start()</code>方法。</li>
+<li>就绪（runnable）：
+调用<code>start()</code>方法后，运行<code>run()</code>方法之前，等待获取<code>CPU</code>的使用权。</li>
+<li>运行（running）：
+<code>就绪</code>状态的线程获取了<code>CPU时间片</code>，执行程序代码。</li>
+<li>阻塞（blocked）：
+阻塞状态是指线程因为某种原因放弃了 <code>cpu</code>  使用权，也即让出了  <code>cpu timeslice</code> ，暂时停止运行。直到线程进入可运行( runnable )状态，才有 机会再次获得 <code>cpu timeslice</code>  转到运行( running )状态。阻塞的情况分三种：
+(一). 等待阻塞：运行( running )的线程执行 <code>wait ()</code>方法， JVM 会把该线程放 入等待队列( waitting queue )中。
+(二). 同步阻塞：运行( running )的线程在获取对象的同步锁时，若该同步锁 被别的线程占用，则 JVM 会把该线程放入锁池( lock pool )中。
+(三). 其他阻塞: 运行( running )的线程执行 Thread . sleep ( long ms )或 t . join  ()方法，或者发出了 I / O 请求时， JVM 会把该线程置为阻塞状态。<br>
+当 sleep ()状态超时、 join ()等待线程终止或者超时、或者 I / O 处理完毕时，线程重新转入可运行( runnable )状态。</li>
+<li>消亡（dead）：
+线程 run ()、 main () 方法执行结束，或者因异常退出了 run ()方法，则该线程结束生命周期。死亡的线程不可再次复生。
+&gt; 注意：<code>sleep(long mills)</code>：会释放CPU资源，但不会释放锁。<code>wait()</code>：会释放CPU资源和锁资源。
+<strong>参考图示：</strong>
+</li>
+</ul>
 
-<p>Having trouble with Pages? Check out our <a href="https://help.github.com/pages">documentation</a> or <a href="https://github.com/contact">contact support</a> and we’ll help you sort it out.</p>
+<h2>
+<a id="3volatile关键字说明" class="anchor" href="#3volatile%E5%85%B3%E9%94%AE%E5%AD%97%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>3、<code>volatile</code>关键字说明。</h2>
+
+<p><strong><code>volatile</code>关键字用在多线程同步中，可保证读取的可见性，JVM只是保证从主内存加载到线程工作内存的值是最新的读取值，而非cache中。
+但多个线程对volatile的写操作，无法保证线程安全。例如假如线程1，线程2 在进行read,load 操作中，发现主内存中count的值都是5，
+那么都会加载这个最新的值，在线程1堆count进行修改之后，会write到主内存中，主内存中的count变量就会变为6；线程2由于已经进行read,load操作，
+在进行运算之后，也会更新主内存count的变量值为6；导致两个线程及时用volatile关键字修改之后，还是会存在并发的情况。</strong></p>
+
+<h2>
+<a id="4java集合泛型类关系图" class="anchor" href="#4java%E9%9B%86%E5%90%88%E6%B3%9B%E5%9E%8B%E7%B1%BB%E5%85%B3%E7%B3%BB%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>4、Java集合泛型类关系图。</h2>
+
+<h2>
+<a id="5collection-和-collections的区别" class="anchor" href="#5collection-%E5%92%8C-collections%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>5、Collection 和 Collections的区别？</h2>
+
+<p><strong>Collection是一个接口，所有的集合类（除Map外）都要继承（实现）自该接口。它提供了对集合对象进行基本操作的通用接口方法。
+Collections是一个包装类，它包含有各种有关集合操作的静态多态方法。（Collections是一个工具类，不能实例化）</strong></p>
+
+<h2>
+<a id="6java流类图结构" class="anchor" href="#6java%E6%B5%81%E7%B1%BB%E5%9B%BE%E7%BB%93%E6%9E%84" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>6、Java流类图结构。</h2>
+
+<h2>
+<a id="7访问修饰符publicprivateprotected以及不写默认时的区别" class="anchor" href="#7%E8%AE%BF%E9%97%AE%E4%BF%AE%E9%A5%B0%E7%AC%A6publicprivateprotected%E4%BB%A5%E5%8F%8A%E4%B8%8D%E5%86%99%E9%BB%98%E8%AE%A4%E6%97%B6%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>7、访问修饰符public,private,protected,以及不写（默认）时的区别？</h2>
+
+<p>修饰符   当前类   同 包 子 类 其他包
+public  √ √ √ √
+protected   √ √ √ ×
+default √ √ ×  ×
+private √ ×  ×  ×</p>
+
+<h2>
+<a id="8int和integer有什么区别" class="anchor" href="#8int%E5%92%8Cinteger%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>8、int和Integer有什么区别？</h2>
+
+<p>Java是一个近乎纯洁的面向对象编程语言，但是为了编程的方便还是引入了基本数据类型，但是为了能够将这些基本数据类型当成对象操作，Java为每一个基本数据类型都引入了对应的包装类型（wrapper class），int的包装类就是Integer，从Java 5开始引入了自动装箱/拆箱机制，使得二者可以相互转换。
+Java 为每个原始类型提供了包装类型：</p>
+
+<ul>
+<li>原始类型: boolean，char，byte，short，int，long，float，double</li>
+<li>包装类型：Boolean，Character，Byte，Short，Integer，Long，Float，Double
+** 扩展：说明下列代码的输出结果（结果：true,false）</li>
+</ul>
+
+<pre><code>public class Test03 {
+    public static void main(String[] args) {
+        Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;
+        System.out.println(f1 == f2);
+        System.out.println(f3 == f4);
+    }
+}
+</code></pre>
+
+<p><strong>解析</strong>：
+如果不明就里很容易认为两个输出要么都是true要么都是false。首先需要注意的是f1、f2、f3、f4四个变量都是Integer对象引用，所以下面的==运算比较的不是值而是引用。
+装箱的本质是什么呢？当我们给一个Integer对象赋一个int值的时候，会调用Integer类的静态方法valueOf，如果看看valueOf的源代码就知道发生了什么。</p>
+
+<pre><code>public static Integer valueOf(int i) {
+        if (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)
+            return IntegerCache.cache[i + (-IntegerCache.low)];
+        return new Integer(i);
+    }
+</code></pre>
+
+<p><code>IntegerCache</code> 是Integer的内部类，其代码如下所示：</p>
+
+<pre><code>/**
+     * Cache to support the object identity semantics of autoboxing for values between
+     * -128 and 127 (inclusive) as required by JLS.
+     *
+     * The cache is initialized on first usage.  The size of the cache
+     * may be controlled by the {@code -XX:AutoBoxCacheMax=&lt;size&gt;} option.
+     * During VM initialization, java.lang.Integer.IntegerCache.high property
+     * may be set and saved in the private system properties in the
+     * sun.misc.VM class.
+     */
+
+    private static class IntegerCache {
+        static final int low = -128;
+        static final int high;
+        static final Integer cache[];
+
+        static {
+            // high value may be configured by property
+            int h = 127;
+            String integerCacheHighPropValue =
+                sun.misc.VM.getSavedProperty("java.lang.Integer.IntegerCache.high");
+            if (integerCacheHighPropValue != null) {
+                try {
+                    int i = parseInt(integerCacheHighPropValue);
+                    i = Math.max(i, 127);
+                    // Maximum array size is Integer.MAX_VALUE
+                    h = Math.min(i, Integer.MAX_VALUE - (-low) -1);
+                } catch( NumberFormatException nfe) {
+                    // If the property cannot be parsed into an int, ignore it.
+                }
+            }
+            high = h;
+
+            cache = new Integer[(high - low) + 1];
+            int j = low;
+            for(int k = 0; k &lt; cache.length; k++)
+                cache[k] = new Integer(j++);
+
+            // range [-128, 127] must be interned (JLS7 5.1.7)
+            assert IntegerCache.high &gt;= 127;
+        }
+
+        private IntegerCache() {}
+    }
+</code></pre>
+
+<p>简单的说，如果整型字面量的值在-128到127之间，那么不会new新的Integer对象，而是直接引用常量池中的Integer对象，所以上面的面试题中f1==f2的结果是true，而f3==f4的结果是false。</p>
+
+<h2>
+<a id="9和的区别" class="anchor" href="#9%E5%92%8C%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>9、&amp;和&amp;&amp;的区别？</h2>
+
+<p>&amp;运算符有两种用法：(1)按位与；(2)逻辑与。
+  &amp;&amp;运算符是短路与运算。逻辑与跟短路与的差别是非常巨大的，虽然二者都要求运算符左右两端的布尔值都是true整个表达式的值才是true。&amp;&amp;之所以称为短路运算是因为，如果&amp;&amp;左边的表达式的值是false，右边的表达式会被直接短路掉，不会进行运算。很多时候我们可能都需要用&amp;&amp;而不是&amp;，例如在验证用户登录时判定用户名不是null而且不是空字符串，应当写为：username != null &amp;&amp;!username.equals("")，二者的顺序不能交换，更不能用&amp;运算符，因为第一个条件如果不成立，根本不能进行字符串的equals比较，否则会产生NullPointerException异常。注意：逻辑或运算符（|）和短路或运算符（||）的差别也是如此。</p>
+
+<h2>
+<a id="10什么是死锁产生死锁的原因是什么解决死锁的方法有哪些" class="anchor" href="#10%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%BB%E9%94%81%E4%BA%A7%E7%94%9F%E6%AD%BB%E9%94%81%E7%9A%84%E5%8E%9F%E5%9B%A0%E6%98%AF%E4%BB%80%E4%B9%88%E8%A7%A3%E5%86%B3%E6%AD%BB%E9%94%81%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>10、什么是死锁？产生死锁的原因是什么？解决死锁的方法有哪些？</h2>
+
+<p><strong>死锁定义</strong>
+ 是指两个或两个以上的进程在执行过程中，由于竞争资源或者由于彼此通信而造成的一种阻塞的现象，若无外力作用，它们都将无法推进下去。此时称系统处于死锁状态或系统产生了死锁，这些永远在互相等待的进程称为死锁进程。</p>
+
+<p><strong>死锁发生的四个必要条件</strong></p>
+
+<ul>
+<li>互斥条件：指进程对所分配到的资源进行排它性使用，即在一段时间内某资源只由一个进程占用。如果此时还有其它进程请求资源，则请求者只能等待，直至占有资源的进程用毕释放。</li>
+<li>请求和保持条件：指进程已经保持至少一个资源，但又提出了新的资源请求，而该资源已被其它进程占有，此时请求进程阻塞，但又对自己已获得的其它资源保持不放。</li>
+<li>剥夺条件：指进程已获得的资源，在未使用完之前，不能被剥夺，只能在使用完时由自己释放。</li>
+<li>环路等待条件：指在发生死锁时，必然存在一个进程——资源的环形链，即进程集合{P0，P1，P2，···，Pn}中的P0正在等待一个P1占用的资源；P1正在等待P2占用的资源，……，Pn正在等待已被P0占用的资源。</li>
+</ul>
+
+<p><strong>产生原因</strong></p>
+
+<ul>
+<li>系统资源的竞争
+通常系统中拥有的不可剥夺资源，其数量不足以满足多个进程运行的需要，使得进程在 运行过程中，会因争夺资源而陷入僵局，如磁带机、打印机等。只有对不可剥夺资源的竞争 才可能产生死锁，对可剥夺资源的竞争是不会引起死锁的。
+&gt; <code>竞争不可抢占性资源引起死锁</code>：通常系统中所拥有的不可抢占性资源其数量不足以满足多个进程的运行需要，使得进程在运行过程中，会因争夺资源而陷入僵局。</li>
+<li>进程推进顺序不当引起死锁
+进程在运行过程中，请求和释放资源的顺序不当，也同样会导致死锁。例如，并发进程 P1、P2分别保持了资源R1、R2，而进程P1申请资源R2，进程P2申请资源R1时，两者都 会因为所需资源被占用而阻塞。
+信号量使用不当也会造成死锁。进程间彼此相互等待对方发来的消息，结果也会使得这 些进程间无法继续向前推进。例如，进程A等待进程B发的消息，进程B又在等待进程A 发的消息，可以看出进程A和B不是因为竞争同一资源，而是在等待对方的资源导致死锁</li>
+</ul>
+
+<p><strong>死锁处理策略</strong></p>
+
+<ul>
+<li>预防死锁
+设置某些限制条件，破坏产生死锁的四个必要条件中的一个或几个，以防止发生死锁。</li>
+<li>避免死锁
+在资源的动态分配过程中，用某种方法防止系统进入不安全状态，从而避免死锁。</li>
+<li>死锁的检测及解除
+无需釆取任何限制性措施，允许进程在运行过程中发生死锁。通过系统的检测机构及时 地检测出死锁的发生，然后釆取某种措施解除死锁。
+预防死锁和避免死锁都属于事先预防策略，但预防死锁的限制条件比较严格，实现起来 较为简单，但往往导致系统的效率低，资源利用率低；避免死锁的限制条件相对宽松，资源 分配后需要通过算法来判断是否进入不安全状态，实现起来较为复杂。
+死锁处理策略  各种可能模式  主要优点    主要缺点
+死锁预防    保守，宁可资源闲置 一次请求所有资源，资 源剥夺，资源按序分配   适用于做突发式处理 的进程，不必进行剥夺  效率低，进程初始化时 间延长；剥夺次数过多； 不便灵活申请新资源
+死锁避免    是”预防“和”检测“ 的折中（在运行时判断是 否可能死锁） 寻找可能的安全允许 顺序  不必进行剥夺  必须知道将来的资源 需求；进程不能被长时间 阻塞
+死锁检测    宽松，只要允许就分配 资源   定期检查死锁是否已 经发生   不延长进程初始化时 间，允许对死锁进行现场 处理    通过剥夺解除死锁，造 成损失
+## 11、String和StringBuilder、StringBuffer的区别？</li>
+<li>String是只读字符串，即不可变字符串。StringBuilder/StringBuffer的可变字符串，底层基于数组的方式实现。</li>
+<li>在对字符串进行操作（修改）时，String会产生新的对象，而StringBuilder/StringBuffer不会。</li>
+<li>由于在对字符串进行操作时，StringBuilder/StringBuffer不会产生新的对象，这样在频繁的对字符串进行修改等操作时，StringBuilder/StringBuffer效率更高。</li>
+<li>StringBuilder线程不安全、StringBuffer线程安全。故StringBuilder效率更高。</li>
+<li>由于String是不可变的，所以String类型对象可以在编译期间得到优化，多个String对象可以共享同一个字符串值。这也是为什么下列程序的结果为<code>false true true</code>
+</li>
+</ul>
+
+<pre><code>String s1 = "Programming";
+String s2 = new String("Programming");
+String s3 = "Program" + "ming";
+System.out.println(s1 == s2);  //false
+System.out.println(s1 == s3);  //true
+System.out.println(s1 == s1.intern());  //true  
+</code></pre>
+
+<h2>
+<a id="12string-s--new-stringxyz创建了几个字符串对象" class="anchor" href="#12string-s--new-stringxyz%E5%88%9B%E5%BB%BA%E4%BA%86%E5%87%A0%E4%B8%AA%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AF%B9%E8%B1%A1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>12、String s = new String("xyz");创建了几个字符串对象？</h2>
+
+<p>两个对象，一个是静态区的"xyz"，一个是用new创建在堆上的对象。</p>
+
+<h2>
+<a id="13线程的sleep方法和yield方法有什么区别" class="anchor" href="#13%E7%BA%BF%E7%A8%8B%E7%9A%84sleep%E6%96%B9%E6%B3%95%E5%92%8Cyield%E6%96%B9%E6%B3%95%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>13、线程的sleep()方法和yield()方法有什么区别？</h2>
+
+<p>① sleep()方法给其他线程运行机会时不考虑线程的优先级，因此会给低优先级的线程以运行的机会；yield()方法只会给相同优先级或更高优先级的线程以运行的机会；
+② 线程执行sleep()方法后转入阻塞（blocked）状态，而执行yield()方法后转入就绪（ready）状态；
+③ sleep()方法声明抛出InterruptedException，而yield()方法没有声明任何异常；
+④ sleep()方法比yield()方法（跟操作系统CPU调度相关）具有更好的可移植性。</p>
+
+<h2>
+<a id="14sleep方法和wait方法的区别" class="anchor" href="#14sleep%E6%96%B9%E6%B3%95%E5%92%8Cwait%E6%96%B9%E6%B3%95%E7%9A%84%E5%8C%BA%E5%88%AB" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>14、sleep()方法和wait()方法的区别？</h2>
+
+<ul>
+<li>sleep()方法是<code>Thread</code>类的方法，wait() 方法是<code>Object</code>类的方法。</li>
+<li>sleep() 不会释放对象锁，wait() 方法会释放对象锁。</li>
+<li>sleep() 方法会抛出<code>InterruptedException</code>异常，wait()方法不会。
+&gt; 补充：sleep()方法（休眠）是线程类（Thread）的静态方法，调用此方法会让当前线程暂停执行指定的时间，将执行机会（CPU）让给其他线程，但是对象的锁依然保持，因此休眠时间结束后会自动恢复（线程回到就绪状态）。wait()是Object类的方法，调用对象的wait()方法导致当前线程放弃对象的锁（线程暂停执行），进入对象的等待池（wait pool），只有调用对象的notify()方法（或notifyAll()方法）时才能唤醒等待池中的线程进入等锁池（lock pool），如果线程重新获得对象的锁就可以进入就绪状态。
+## 15、请说出与线程同步以及线程调度相关的方法？</li>
+<li>wait()：使一个线程处于等待（阻塞）状态，并且释放所持有的对象的锁；</li>
+<li>sleep()：使一个正在运行的线程处于睡眠状态，是一个静态方法，调用此方法要处理InterruptedException异常；</li>
+<li>notify()：唤醒一个处于等待状态的线程，当然在调用此方法的时候，并不能确切的唤醒某一个等待状态的线程，而是由JVM确定唤醒哪个线程，而且与优先级无关；</li>
+<li>notityAll()：唤醒所有处于等待状态的线程，该方法并不是将对象的锁给所有线程，而是让它们竞争，只有获得锁的线程才能进入就绪状态；
+## 16、Java实现多线程的几种方式？
+继承Thread类、实现Runnable接口、使用ExecutorService、Callable、Future实现有返回结果的多线程。</li>
+</ul>
         </section>
 
         <aside id="sidebar">

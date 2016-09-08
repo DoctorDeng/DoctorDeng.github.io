@@ -1,4 +1,7 @@
-_site
-.sass-cache
-.jekyll-metadata
-.idea
+_site/
+*.swp
+*.~vsd
+\#*\#
+*~
+.DS_Store
+Gemfile.lock

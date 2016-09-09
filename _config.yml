@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://www.doctordeng.vip
+url: www.doctordeng.vip
 date_format: "ordinal"
 title: Doctor邓
 subtitle: "书是个好东西哈"

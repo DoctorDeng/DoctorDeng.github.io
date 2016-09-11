@@ -6,7 +6,7 @@ description: 个人最常用的 Vim 常用操作。
 keywords: Vim
 ---
 
-##转发的自[@mzlogin](https://github.com/mzlogin)
+## 转发的自[@mzlogin](https://github.com/mzlogin)
 
 ### 移动
 

@@ -6,7 +6,7 @@ description: Git 常用操作记录。
 keywords: Git, 版本控制
 ---
 
-##转发的自[@mzlogin](https://github.com/mzlogin)
+## 转发的自[@mzlogin](https://github.com/mzlogin)
 
 ### 常用命令
 

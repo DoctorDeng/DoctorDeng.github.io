@@ -10,7 +10,7 @@ permalink: /about/
 
 我是邓华杰，自称Doctor邓。
 
-漫天星海中,我是一颗不起眼的星,但我也能发亮啊！
+热爱IT,向高级码农奋斗中！
 
 ## 座右铭
 
@@ -19,10 +19,10 @@ permalink: /about/
 
 ## 联系
 
-* GitHub：[@DoctorDeng](https://github.com/DoctorDeng)
-* 慕课网：[@MotoDoctor](http://www.imooc.com/u/2400213)
-* 实验楼: [@MotoDoctor](https://www.shiyanlou.com/user/125214)
-* 简书:[@Doctor邓](http://www.jianshu.com/users/ba7ec0a7438e/timeline)
+* GitHub: [@DoctorDeng](https://github.com/DoctorDeng)
+* 慕  课  网: [@MotoDoctor](http://www.imooc.com/u/2400213)
+* 实  验  楼: [@MotoDoctor](https://www.shiyanlou.com/user/125214)
+* 简        书: [@Doctor邓](http://www.jianshu.com/users/ba7ec0a7438e/timeline)
 
 ## 职业技能
 

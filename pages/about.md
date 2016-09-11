@@ -47,4 +47,4 @@ permalink: /about/
     {% endfor %}
 </div>
 
-##  [简历](/images/java开发工程师（初级）--邓华杰 --黄冈师范学院--无工作经验.pdf)
+[点我查看简历](/images/java开发工程师（初级）--邓华杰 --黄冈师范学院--无工作经验.pdf)

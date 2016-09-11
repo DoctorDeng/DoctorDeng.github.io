@@ -8,44 +8,41 @@ menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是邓华杰，自称Doctor邓。
 
-仰慕「优雅编码的艺术」。
+漫天星海中,我是一颗不起眼的星,但我也能发亮啊！
 
-## 坚信
+## 座右铭
 
-* 熟能生巧
-* 努力改变人生
+* 要有追求,懂得为追求而上进。
+* 男人就该对自己好一点。
 
 ## 联系
 
 * GitHub：[@DoctorDeng](https://github.com/DoctorDeng)
-* 掘金：[@mzlogin](http://gold.xitu.io/user/570ddaeb2e958a005c63b2da)
-* LinkedIn：[@mazhuang](https://www.linkedin.com/in/mazhuang)
-* 博客：[{{ site.title }}]({{ site.url }})
-* 微博: [@mzlogin](http://weibo.com/mzlogin)
-* 知乎: [@mzlogin](http://www.zhihu.com/people/mzlogin)
-* 豆瓣: [@壮哥不胖](http://www.douban.com/people/freedim)
+* 慕课网：[@MotoDoctor](http://www.imooc.com/u/2400213)
+* 实验楼: [@MotoDoctor](https://www.shiyanlou.com/user/125214)
+* 简书:[@Doctor邓](http://www.jianshu.com/users/ba7ec0a7438e/timeline)
 
-## Skill Keywords
+## 职业技能
 
-#### Software Engineer Keywords
+#### 后端
 <div class="btn-inline">
-    {% for keyword in site.skill_software_keywords %}
+    {% for keyword in site.skill_server_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
 
-#### Mobile Developer Keywords
+#### 前端
 <div class="btn-inline">
-    {% for keyword in site.skill_mobile_app_keywords %}
+    {% for keyword in site.skill_web_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
 
-#### Windows Developer Keywords
+#### 还了解
 <div class="btn-inline">
-    {% for keyword in site.skill_windows_keywords %}
+    {% for keyword in site.skill_know_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>

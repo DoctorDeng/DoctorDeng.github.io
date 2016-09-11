@@ -20,7 +20,7 @@ side_bar_repo_limit: 5
 author: Doctor邓
 organization: 黄冈师范学院.
 organization_url: http://www.hgnc.net/2016/index.jsp
-location: HuangGang, China
+location: 黄冈--中国
 email: 1412145477@qq.com
 
 # ---------------- #
@@ -108,6 +108,6 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_software_keywords: [Java, MySQL, Oracle, PHP]
-#skill_mobile_app_keywords: [Android, Reverse Engineering]
-#skill_windows_keywords: [Win32 SDK, DuiLib, WTL, COM, WinDbg]
+skill_server_keywords: [MySQL, Oracle, Spring, SpringMVC, Mybatis]
+skill_web_keywords: [HTML, CSS, JavaScript, jQuery]
+skill_know_keywords: [EasyUI, BootStrap, Java微信开发, Linux, PHP]

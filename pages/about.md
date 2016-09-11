@@ -40,7 +40,7 @@ permalink: /about/
     {% endfor %}
 </div>
 
-#### 还了解
+#### 了解
 <div class="btn-inline">
     {% for keyword in site.skill_know_keywords %}
     <button class="btn btn-outline" type="button">{{ keyword }}</button>

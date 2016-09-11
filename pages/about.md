@@ -10,7 +10,7 @@ permalink: /about/
 
 我是邓华杰，自称Doctor邓。
 
-热爱IT,向高级码农奋斗中！
+越学越知道自己无知！
 
 ## 座右铭
 
@@ -46,3 +46,5 @@ permalink: /about/
     <button class="btn btn-outline" type="button">{{ keyword }}</button>
     {% endfor %}
 </div>
+
+##  [简历](/images/java开发工程师（初级）--邓华杰 --黄冈师范学院--无工作经验.pdf)

@@ -1,6 +1,6 @@
-# 码志
+# 以下是大神搭建博客的教程
 
-我的个人博客：<http://mazhuang.org>，欢迎 Star 和 Fork。
+大神的个人博客：<http://mazhuang.org>，欢迎 Star 和 Fork。
 
 ## 概览
 

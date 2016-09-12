@@ -9,3 +9,9 @@ keywords: java, 面试
 介绍一些Jsp、Servlet的知识
 
 ## 1、Servlet接口五种方法介绍。
+1.`init()`
+在Servlet实例化后，Servlet 容器会调用 init() 方法来初始化该对象，主要是为了让 Servlet 对象在处理客户请求前可以完成一些初始化工作，例如：建立数据库的连接，获取配置信息等。对于每一个 Servlet 实例，init() 方法只能被调用一次。init() 方法有一个类型为ServletConfig的参数，Servlet 容器通过这个参数向 Servlet 传递配置信息。Servlet 使用 ServletConfig 对象从 Web 应用程序的配置信息中获取以名-值对形式提供的初始化参数。另外，在 Servlet 中，还可以通过 ServletConfig 对象获取描述 Servlet 运行环境的 ServletContext 对象，使用该对象，Servlet 可以和它的 Servlet 容器进行通信
+2.`service()`
+3.`destroy()`
+4.`getServletConfig()`
+5.`getServletInfo()`

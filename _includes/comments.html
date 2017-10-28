@@ -55,19 +55,19 @@
         <!-- Duoshuo Comment END -->
         {% endif %}
       {% endif %}
-    {% when 'duoshuo' %}
+<!--    {% when 'duoshuo' %}
       {% if site.duoshuo_username %}
-      <!-- Duoshuo Comment BEGIN -->
-      <!-- 多说热评文章 start -->
-	  <!-- <div class="ds-top-threads" data-range="monthly" data-num-items="5"></div> -->
-	  <!-- 多说热评文章 end -->
-	  <!-- 多说最新评论 start -->
-	  <!-- <div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div> -->
-      <!-- 多说最新评论 end -->
-      <!-- 多说评论框 BEGIN -->
+      &lt;!&ndash; Duoshuo Comment BEGIN &ndash;&gt;
+      &lt;!&ndash; 多说热评文章 start &ndash;&gt;
+	  &lt;!&ndash; <div class="ds-top-threads" data-range="monthly" data-num-items="5"></div> &ndash;&gt;
+	  &lt;!&ndash; 多说热评文章 end &ndash;&gt;
+	  &lt;!&ndash; 多说最新评论 start &ndash;&gt;
+	  &lt;!&ndash; <div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div> &ndash;&gt;
+      &lt;!&ndash; 多说最新评论 end &ndash;&gt;
+      &lt;!&ndash; 多说评论框 BEGIN &ndash;&gt;
       <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
-      <!-- 多说评论框 END -->
-      <!-- 多说公共JS代码 BEGIN (一个网页只需插入一次) -->
+      &lt;!&ndash; 多说评论框 END &ndash;&gt;
+      &lt;!&ndash; 多说公共JS代码 BEGIN (一个网页只需插入一次) &ndash;&gt;
       <script type="text/javascript">
       var duoshuoQuery = {short_name:"{{ site.duoshuo_username }}"};
         (function() {
@@ -79,10 +79,9 @@
            || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
         </script>
-      <!-- 多说公共JS代码 END -->
-      <!-- Duoshuo Comment END -->
-      {% endif %}
-
+      &lt;!&ndash; 多说公共JS代码 END &ndash;&gt;
+      &lt;!&ndash; Duoshuo Comment END &ndash;&gt;
+      {% endif %}-->
     {% when 'laibili' %}
         <!-- 来必力City版安装代码 -->
         <div id="lv-container" data-id="city" data-uid="{{ site.laibili_uid` }}">

@@ -4,9 +4,9 @@
       {% if site.disqus_username %}
         {% assign load_disqus = true %}
         <!-- Disqus Protection, see https://github.com/mzlogin/mzlogin.github.io/issues/2 -->
-        {% if site.disqus_username == 'mzlogin' %}
+        {% if site.disqus_username == 'DoctorDeng' %}
           {% assign load_disqus = false %}
-          {% if site.url contains 'mazhuang.org' %}
+          {% if site.url contains 'doctordeng.vip' %}
             {% assign load_disqus = true %}
           {% endif %}
         {% endif %}
@@ -82,5 +82,25 @@
       <!-- 多说公共JS代码 END -->
       <!-- Duoshuo Comment END -->
       {% endif %}
+
+    {% when 'laibili' %}
+        <!-- 来必力City版安装代码 -->
+        <div id="lv-container" data-id="city" data-uid="{{ site.laibili_uid` }}">
+          <script type="text/javascript">
+              (function(d, s) {
+                  var j, e = d.getElementsByTagName(s)[0];
+
+                  if (typeof LivereTower === 'function') { return; }
+
+                  j = d.createElement(s);
+                  j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                  j.async = true;
+
+                  e.parentNode.insertBefore(j, e);
+              })(document, 'script');
+          </script>
+          <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+        </div>
+        <!-- City版安装代码已完成 -->
   {% endcase %}
 {% endif %}

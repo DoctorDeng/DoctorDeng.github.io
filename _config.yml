@@ -4,7 +4,7 @@
 baseurl:
 url: www.doctordeng.vip
 date_format: "ordinal"
-title: Doctor邓
+title: DoctorDeng
 subtitle: "书是个好东西哈"
 description: "邓华杰的个人博客"
 keywords: Doctor邓, DoctorDeng, 邓博士,DoctorDream
@@ -90,15 +90,17 @@ github_username: DoctorDeng
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, duoshuo
-comments_provider: duoshuo
+# support provider: disqus, duoshuo, laibili
+comments_provider: laibili
 # !!!重要!!! 请修改下面两个用户名为你自己申请的
 # !!!Important!!! Please modify usernames below to yours
-duoshuo_username: doctordeng
+#duoshuo_username: doctordeng
 #disqus_username: mzlogin
 # 在使用 disqus 的时候可点击显示多说评论框
 #lazy_load_duoshuo: false
-duoshuo_share: true
+#duoshuo_share: true
+
+laibili_uid=MTAyMC8zMTU1NS84MTE5
 lazy_load_duoshuo: false
 
 # ---------------- #

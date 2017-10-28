@@ -100,7 +100,7 @@ comments_provider: laibili
 #lazy_load_duoshuo: false
 #duoshuo_share: true
 
-laibili_uid=MTAyMC8zMTU1NS84MTE5
+laibili_uid : MTAyMC8zMTU1NS84MTE5
 lazy_load_duoshuo: false
 
 # ---------------- #

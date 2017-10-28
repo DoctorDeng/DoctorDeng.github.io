@@ -7,7 +7,7 @@ date_format: "ordinal"
 title: DoctorDeng
 subtitle: "书是个好东西哈"
 description: "邓华杰的个人博客"
-keywords: Doctor邓, DoctorDeng, 邓博士,DoctorDream
+keywords: Doctor邓, DoctorDeng, 邓博士
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -17,11 +17,11 @@ side_bar_repo_limit: 5
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Doctor邓
-organization: 黄冈师范学院.
-organization_url: http://www.hgnc.net/2016/index.jsp
-location: 黄冈--中国
-email: 1412145477@qq.com
+author: DoctorDeng
+organization: 北京九恒星科技股份有限公司.
+organization_url: http://www.nstc.com.cn
+location: 北京--中国
+email: vip.doctordeng@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -112,6 +112,6 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_server_keywords: [MySQL, Oracle, Spring, SpringMVC, Mybatis]
-skill_web_keywords: [HTML, CSS, JavaScript, jQuery]
-skill_know_keywords: [EasyUI, BootStrap, Java微信开发, Linux, PHP]
+skill_server_keywords: [MySQL、Oracle, Nginx, Redis, SSM]
+skill_web_keywords: [EasyUI, BootStrap, jQuery, FreeMarker]
+skill_know_keywords: [Docker, Linux]

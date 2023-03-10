@@ -112,6 +112,5 @@ google:
 # ---------------- #
 #      Datas       #
 # ---------------- #
-skill_server_keywords: [MySQL、Oracle, Nginx, Redis, SSM]
-skill_web_keywords: [EasyUI, BootStrap, jQuery, FreeMarker]
-skill_know_keywords: [Docker, Linux]
+skill_server_keywords: [Spring Boot, Spring Cloud, Redis, Kafka, Nacos]
+skill_know_keywords: [Kubernetes, Docker, Jenkins, Shell, Linux]

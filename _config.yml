@@ -2,12 +2,12 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: www.doctordeng.vip
+url: doctordeng.github.io
 date_format: "ordinal"
 title: DoctorDeng
 subtitle: "书是个好东西哈"
-description: "邓华杰的个人博客"
-keywords: Doctor邓, DoctorDeng, 邓博士
+description: "小邓的个人博客"
+keywords: DoctorDeng
 favicon: /favicon.ico
 timezone: Asia/Shanghai
 encoding: "utf-8"
@@ -18,9 +18,9 @@ side_bar_repo_limit: 5
 #      Author      #
 # ---------------- #
 author: DoctorDeng
-organization: 北京九恒星科技股份有限公司.
-organization_url: http://www.nstc.com.cn
-location: 北京--中国
+organization: 无业游民
+organization_url: https://github.com/DoctorDeng
+location: 北京-中国
 email: vip.doctordeng@gmail.com
 
 # ---------------- #
